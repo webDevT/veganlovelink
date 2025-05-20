@@ -7,11 +7,21 @@
 	<title>Veganlovelink</title>
 	<meta name="description" content="veganlovelink">
 <meta name="keywords" content="veganlovelink">
-
+<!-- Preconnect для шрифтов -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Preload для конкретных woff2-файлов -->
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/ibmplexsans/v16/IBMPlexSans-Regular.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/mulish/v12/Mulish-Regular.woff2" crossorigin>
+
+<!-- Основная Google Fonts CSS -->
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="preload" as="image" href="img/photo1.png" />
+	<link rel="preload" as="image" href="img/photo2.png" />
 </head>
 <body>
 
@@ -45,7 +55,7 @@
 						<div class="name-wrapper">
 							Morgan
 						</div>
-						<img src="img/photo1.png" alt="flag" class="photo1 photo" loading="lazy">
+						<img src="img/photo1.png" alt="flag" class="photo1 photo" width="146" height="146">
 						
 					</div>
 
@@ -53,12 +63,12 @@
 						<div class="name-wrapper">
 							Olivia 
 						</div>
-						<img src="img/photo2.png" alt="photo" class="photo2 photo" loading="lazy">
+						<img src="img/photo2.png" alt="photo" class="photo2 photo" width="160" height="160">
 					</div>
 				</div>
 
 				<div class="main-screen__content-wrapper">
-					<img src="img/white-logo.svg" alt="logo" loading="lazy">
+					<img src="img/white-logo.svg" alt="logo">
 
 				<h2 class="h2">
 					Join Our Vegan <br>
@@ -74,7 +84,7 @@
 				<a href="" class="button button--white">
 					Continue on Telegram
 					<div class="button__icon">
-						<img src="img/tg.svg" alt="telegram icon" loading="lazy">
+						<img src="img/tg.svg" alt="telegram icon">
 						<div class="button__icon-num">2</div>						
 					</div>				
 				</a>
